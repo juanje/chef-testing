@@ -6,7 +6,7 @@ Ok, I have defined the business goal as:
 
 > I want to have a web page that says '**Hello world!**'.
 
-And a test to check that my code will acomplish that:
+And a test to check that my code will accomplish that:
 
 ```
 describe "Web server" do
