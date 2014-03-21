@@ -1,6 +1,6 @@
 require 'chefspec'
 
-describe 'webtest::default' do
+describe 'webtest-3::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
   it 'install nginx package' do
