@@ -7,6 +7,8 @@ I'll try to follow the BDD/TDD approach and try the different tools from the Che
 I won't try to describe the right way, just what makes more sense to me based in my own experience. It'll serve me to learn the tools, to proof some ideas and to have some examples. Also to have documented problem I'll run into and the solutions I'll find.
 I hope this help someone else.
 
+> **NOTE:** This repo and this document are **WIP**, it's not finished and you'll miss some final steps (by now).
+
 ## The process
 
 The process will be:
