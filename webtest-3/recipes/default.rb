@@ -1,9 +1,5 @@
 package 'nginx'
 
 service 'nginx' do
-  action :enable
-end
-
-service 'nginx' do
-  action :start
+  action [ :enable, :start ]
 end
