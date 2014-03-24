@@ -37,14 +37,19 @@ Pretty simple and common, isn't it?
 I'll call the project **webtest** and I'll create a directory for every step I'll take. Something like this:
 ```
 |-webtest-0
-|-webtest-0
-|-webtest-0
+|-webtest-1
+|-webtest-2
 |-...
 `-webtest-X
 ```
 
 Each directory should be self-explanatory with its own `README` file to explain what is the goal for that step, the dependencies, processes and difficulties found in that step.
+See the current ones:
 
+* [Webtest-0](webtest-0/README.md): Setup the testing environment.
+* [Webtest-1](webtest-1/README.md): Define the business goal and write the integration tests.
+* [Webtest-2](webtest-2/README.md): Define the technical specs and write some unit tests.
+* [Webtest-3](webtest-3/README.md): Start writing recipes to pass the tests.
 
   [0]: http://www.getchef.com/chef/
   [1]: http://kitchen.ci/
