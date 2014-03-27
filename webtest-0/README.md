@@ -12,6 +12,10 @@ So the first thing is to install the needed tools:
 
 I have already installed **Vagrant** and I use it with **LXC** (thanks to the great *Fabio Rehm*'s plugin [vagrant-lxc][1]) because it's much much faster than *VirtualBox*, so I skipped that part.
 
+> **IMPORTANT NOTE:**
+> The plugin `vagrant-lxc` uses `sudo` a lot and it could ask you for the password too many times. There is a workaround for the issue:
+> https://github.com/fgrehm/vagrant-lxc/wiki/Avoiding-%27sudo%27-passwords
+
 As my very first goal is to have the minimal tooling ready to try something, I'd say that my **DoD** (*Definition of Done*) here is that I'm able to test the simplest cookbook possible with Test-kitchen:
 > cookbook with an **empty recipe** and the **basic metadata file**.
 
