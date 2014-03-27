@@ -16,6 +16,6 @@ describe 'webtest-2::default' do
   end
 
   it 'server a web page that says "Hello world!"' do
-    expect(chef_run).to render_file('/var/www/index.html').with_content(/Hello world!.+/)
+    expect(chef_run).to render_file('/var/www/index.html').with_content(/Hello world!.*/)
   end
 end
