@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Chef-testing : Cooking recipes by testing first" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Chef-testing</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/juanje/chef-testing">View on GitHub</a>
+
+          <h1 id="project_title">Chef-testing</h1>
+          <h2 id="project_tagline">Cooking recipes by testing first</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/juanje/chef-testing/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/juanje/chef-testing/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="cooking-recipes-by-testing-first" class="anchor" href="#cooking-recipes-by-testing-first"><span class="octicon octicon-link"></span></a>Cooking recipes by testing first</h1>
+
+<p>This repo is a step by step example to learn how to create <a href="http://www.getchef.com/chef/">Chef</a> cookbooks by testing first.</p>
+
+<p>I'll try to follow the BDD/TDD approach and try the different tools from the Chef's ecosystem such <a href="http://kitchen.ci/">Test-Kitchen</a>, <a href="http://code.sethvargo.com/chefspec/">ChefSpec</a>, <a href="http://serverspec.org/">ServerSpec</a>, <a href="http://www.foodcritic.io/">Foodcritic</a>...</p>
+
+<p>I won't try to describe the right way, just what makes more sense to me based in my own experience. It'll serve me to learn the tools, to proof some ideas and to have some examples. Also to have documented problem I'll run into and the solutions I'll find.
+I hope this help someone else.</p>
+
+<blockquote>
+<p><strong>NOTE:</strong> This repo and this document are <strong>WIP</strong>, it's not finished and you'll miss some final steps (by now).</p>
+</blockquote>
+
+<h2>
+<a name="the-process" class="anchor" href="#the-process"><span class="octicon octicon-link"></span></a>The process</h2>
+
+<p>The process will be:</p>
+
+<ol>
+<li>Setup the minimal environment for testing how the new system should behave</li>
+<li>Create the minimal tests to check if the system behave as I wish</li>
+<li>Check that the tests doesn't pass</li>
+<li>Think about the simplest technical way to pass those tests</li>
+<li>Setup the minimal environment for testing this technical approach</li>
+<li>Create the minimal tests to check that minimal technical approach</li>
+<li>Check that the tests doesn't pass</li>
+<li>Create the minimal recipe to pass the technical tests</li>
+<li>Check that the tests do pass the technical tests</li>
+<li>Check that the tests do pass the behavior tests</li>
+</ol><p>Once I have this, I will think in another system behavior and repeat the process.</p>
+
+<h2>
+<a name="the-use-case" class="anchor" href="#the-use-case"><span class="octicon octicon-link"></span></a>The use case</h2>
+
+<p>As example I will use the following example:</p>
+
+<blockquote>
+<p>"I'd like to access with my browser to the system and read the sentence <strong>'Hello world!'</strong> in my browser"</p>
+</blockquote>
+
+<p>Pretty simple and common, isn't it?</p>
+
+<h2>
+<a name="how-to-organize-the-code-an-examples" class="anchor" href="#how-to-organize-the-code-an-examples"><span class="octicon octicon-link"></span></a>How to organize the code an examples</h2>
+
+<p>I'll call the project <strong>webtest</strong> and I'll create a directory for every step I'll take. Something like this:</p>
+
+<pre><code>|-webtest-0
+|-webtest-1
+|-webtest-2
+|-...
+`-webtest-X
+</code></pre>
+
+<p>Each directory should be self-explanatory with its own <code>README</code> file to explain what is the goal for that step, the dependencies, processes and difficulties found in that step.
+See the current ones:</p>
+
+<ul>
+<li>
+<a href="webtest-0/README.md">Webtest-0</a>: Setup the testing environment.</li>
+<li>
+<a href="webtest-1/README.md">Webtest-1</a>: Define the business goal and write the integration tests.</li>
+<li>
+<a href="webtest-2/README.md">Webtest-2</a>: Define the technical specs and write some unit tests.</li>
+<li>
+<a href="webtest-3/README.md">Webtest-3</a>: Start writing recipes to pass the tests.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Chef-testing maintained by <a href="https://github.com/juanje">juanje</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
