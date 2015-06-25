@@ -6,14 +6,13 @@ provisioner:
   name: chef_solo
 
 platforms:
-  - name: ubuntu-12.04
+  - name: ubuntu-14.04
     driver:
       provider: lxc
-      box: ubuntu-12.04-i386
-      box_url: https://dl.dropboxusercontent.com/s/6ogb9ie8kqljhex/vagrant-lxc-precise-i386-2013-09-22.box
+      box: fgrehm/trusty64-lxc
       omnibus.chef_version: last
       customize:
-        memory: 256M
+        cgroup.memory.limit_in_bytes: 256M
 
 suites:
   - name: default
