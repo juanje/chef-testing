@@ -41,7 +41,7 @@ Well, let's put this as a tests:
 
 ```
 describe 'webtest::default' do
-  let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+  let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   it 'install nginx package' do
     expect(chef_run).to install_package('nginx')
@@ -94,28 +94,28 @@ webtest::default
 Failures:
 
   1) webtest::default install nginx package
-     Failure/Error: let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+     Failure/Error: let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
      Chef::Exceptions::CookbookNotFound:
        Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
      # ./spec/unit/recipes/default_spec.rb:4:in `block (2 levels) in <top (required)>'
      # ./spec/unit/recipes/default_spec.rb:7:in `block (2 levels) in <top (required)>'
 
   2) webtest::default enable nginx service
-     Failure/Error: let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+     Failure/Error: let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
      Chef::Exceptions::CookbookNotFound:
        Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
      # ./spec/unit/recipes/default_spec.rb:4:in `block (2 levels) in <top (required)>'
      # ./spec/unit/recipes/default_spec.rb:11:in `block (2 levels) in <top (required)>'
 
   3) webtest::default start nginx service
-     Failure/Error: let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+     Failure/Error: let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
      Chef::Exceptions::CookbookNotFound:
        Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
      # ./spec/unit/recipes/default_spec.rb:4:in `block (2 levels) in <top (required)>'
      # ./spec/unit/recipes/default_spec.rb:15:in `block (2 levels) in <top (required)>'
 
   4) webtest::default server a web page that says "Hello world!"
-     Failure/Error: let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+     Failure/Error: let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
      Chef::Exceptions::CookbookNotFound:
        Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
      # ./spec/unit/recipes/default_spec.rb:4:in `block (2 levels) in <top (required)>'

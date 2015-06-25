@@ -1,8 +1,7 @@
 require 'serverspec'
 require 'busser/rubygems'
 
-include Serverspec::Helper::Exec
-include Serverspec::Helper::DetectOS
+set :backend, :exec
 
 Busser::RubyGems.install_gem('faraday', '~> 0.9.0')
 require 'faraday'

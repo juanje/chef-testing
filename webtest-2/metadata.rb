@@ -1,4 +1,4 @@
-name             'webtest'
+name             'webtest-2'
 maintainer       'Juanje Ojeda'
 maintainer_email 'juanje.ojeda@gmail.com'
 license          'Apache 2.0'

@@ -29,7 +29,7 @@ end
 
 ```
 describe 'webtest::default' do
-  let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+  let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   it 'install nginx package' do
     expect(chef_run).to install_package('nginx')
